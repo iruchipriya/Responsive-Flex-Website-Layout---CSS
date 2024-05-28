@@ -1,0 +1,38 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header,
+.footer {
+  height: 70px;
+  background-color: lightgray;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.article {
+  flex: 1;
+  background-color: lightblue;
+}
+
+.aside {
+  height: 70px;
+  background-color: lightgreen;
+}
+
+@media (min-width: 768px) {
+  .main {
+    flex-direction: row;
+  }
+
+  .aside {
+    width: 100px;
+    height: auto;
+  }
+}
